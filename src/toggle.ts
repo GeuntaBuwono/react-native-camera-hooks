@@ -9,7 +9,7 @@ const useToggle = (initialState = '', values = []) => {
     () =>
       setState(
         !values
-          ? _state => !_state
+          ? (_state) => !_state
           : state === values[0]
           ? values[1]
           : values[0]

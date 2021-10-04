@@ -4,7 +4,7 @@ export const useBarcodeDetection = (state = []) => {
   const [barcodes, setBarcodes] = useState(state);
 
   const barcodeRecognized = useCallback(
-    data => {
+    (data) => {
       setBarcodes(data.barcodes);
     },
     [setBarcodes]

@@ -1,41 +1,44 @@
 {
-    "extends": ["eslint:recommended", "react-native-prettier"],
-    "plugins": [
-      "react",
-      "react-native",
-      "react-hooks",
-      "@typescript-eslint"
-    ],
-    "settings": {
-      "react": {
-        "version": "16.9"
-      },
-      "flowtype": {
-        "onlyFilesWithFlowAnnotation": true
-      }
+  "extends": ["eslint:recommended", "react-native-prettier"],
+  "plugins": ["react", "react-native", "react-hooks", "@typescript-eslint"],
+  "settings": {
+    "react": {
+      "version": "16.9"
     },
-    "env": {"es6": true, "jest": false},
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-      "ecmaVersion": 2016,
-      "sourceType": "module",
-      "ecmaFeatures": {
-        "impliedStrict": true,
-        "globalReturn": false,
-        "jsx": true
-      }
-    },
-    "globals": { "fetch": false, "alert": false, "describe": false, "expect": false, "it": false, "XMLHttpRequest": false, "test": false },
-    "rules": {
-      "no-var": "warn",
-      "no-console": "warn",
-      "strict": "error",
-      "comma-dangle": "off",
-      "no-alert": "warn",
-      "react-hooks/rules-of-hooks": "warn",
-      "react-hooks/exhaustive-deps": "warn",
-      "import/prefer-default-export": "off",
-      "import/namespace": "warn",
-      "flowtype/no-types-missing-file-annotation": "off"
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
     }
+  },
+  "env": { "es6": true, "jest": false },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2016,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "globalReturn": false,
+      "jsx": true
+    }
+  },
+  "globals": {
+    "fetch": false,
+    "alert": false,
+    "describe": false,
+    "expect": false,
+    "it": false,
+    "XMLHttpRequest": false,
+    "test": false
+  },
+  "rules": {
+    "no-var": "warn",
+    "no-console": "warn",
+    "strict": "error",
+    "comma-dangle": "off",
+    "no-alert": "warn",
+    "react-hooks/rules-of-hooks": "warn",
+    "react-hooks/exhaustive-deps": "warn",
+    "import/prefer-default-export": "off",
+    "import/namespace": "warn",
+    "flowtype/no-types-missing-file-annotation": "off"
+  }
 }

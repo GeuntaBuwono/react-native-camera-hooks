@@ -33,7 +33,10 @@
     "prepublish": "npm run build",
     "test": "jest",
     "test:coverage": "npm run test -- --coverage",
-    "test:coverage:deploy": "npm run test:coverage && codecov"
+    "test:coverage:deploy": "npm run test:coverage && codecov",
+    "format:lint": "eslint --fix . --ext .js,.jsx,.ts,.tsx",
+    "format:prettier": "prettier --config .prettierrc.js . --write",
+    "formatter": "yarn format:lint && yarn format:prettier"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.10",

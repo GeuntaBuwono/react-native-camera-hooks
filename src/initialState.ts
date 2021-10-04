@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/namespace
 import { Dimensions } from 'react-native';
 
 export interface CameraOptions {

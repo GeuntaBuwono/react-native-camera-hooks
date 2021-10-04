@@ -28,7 +28,7 @@ export const useZoom = (state = 0) => {
 export const useCameraState = (state = {}) => {
   const [cameraState, setCameraState] = useState(state);
 
-  const toggleCameraState = newCameraState => {
+  const toggleCameraState = (newCameraState) => {
     setCameraState({ [newCameraState]: !cameraState[newCameraState] });
   };
 

@@ -7,7 +7,7 @@
 
 <p>
 
-React Native Camera Hooks provides you with functionality to use the React Native Camera API with Functional Components. 
+React Native Camera Hooks provides you with functionality to use the React Native Camera API with Functional Components.
 
 </p>
 
@@ -59,7 +59,8 @@ const FunctionalComponentExample = ({ initialProps }) => {
       <TouchableOpacity
         testID="button"
         onPress={toggleFacing}
-        style={{ width: '100%', height: 45 }}>
+        style={{ width: '100%', height: 45 }}
+      >
         {type}
       </TouchableOpacity>
 
@@ -86,29 +87,29 @@ const FunctionalComponentExample = ({ initialProps }) => {
 
 ## Features
 
-  - React Hooks Support: Use React Native Camera with Functional Components
-  - Wrapper around the Camera API, that makes the usage easier
-  - TypeScript support
+- React Hooks Support: Use React Native Camera with Functional Components
+- Wrapper around the Camera API, that makes the usage easier
+- TypeScript support
 
 Constants are defined in [constants](./src/constants.ts) and [initalState](./src/initialState.ts).
 
-|Function|Description|
-|---|---|
-|`useCamera(initialState)`|Includes all camera hooks described below. See also the example above|
-|`useZoom(state)`|Zoom feature. Includes `zoom`, `setZoom`, `zoomIn` (increment by 0.01) and `zoomOut` (decrement by 0.1) |
-|`useToggleFacing(state, modes)`|Toggles between two values (front and back side of the camera). Includes `type`, `toggleFacing`.|
-|`useAutoFocus(state, modes)`|Toggles between two values (focus on or off). Includes `autoFocus` and `toggleAutoFocus`.|
-|`useWhiteBalance(state)`|Toggles between white balance values. Includes `whiteBalance`, `toggleWB` and `setWhiteBalance`.|
-|`useFlash(state)`|Toggles between flash modes. Includes `flash`, `toggleFlash` and `setFlash`.|
-|`useAutoFocusTouch(state)`|Touch to focus feature. Includes `autoFocusPoint`, `touchToFocus` (callback to be used in `onPress` for example) and `setAutoFocusPoint`.|
-|`useTextRecognition(state)`|Text recognition feature. Includes `textBlocks`, `setTextblocks` and `textRecognized` (callback).|
-|`useFaceDetection(state)`|Face detection feature. Includes `faces`, `setFaces` and `facesDetected` (callback).|
-|`useBarcodeDetection(state)`|Barcode detection feature. Includes `barcodes`, `setBarcodes` and `barcodeRecognized` (callback).|
-|`takePicture({ cameraRef }, options)`|Function to take a picture. Returns a Promise with the result. `defaultPictureTakeOptions` can also be imported from the same file.|
-|`recordVideo({ cameraRef }, options)`|Function to record a video. Returns a Promise with the result. `defaultVideoRecordOptions` can also be imported from the same file.|
-|`stopRecording({ cameraRef })`|Function to stop recording. Returns a Promise.|
-|`pausePreview({ cameraRef })`|Function to pause the camera preview. Returns a Promise with the result as a boolean.|
-|`resumePreview({ cameraRef })`|Function to resume the camera preview. Returns a Promise with the result as a boolean.|
+| Function                              | Description                                                                                                                               |
+| ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| `useCamera(initialState)`             | Includes all camera hooks described below. See also the example above                                                                     |
+| `useZoom(state)`                      | Zoom feature. Includes `zoom`, `setZoom`, `zoomIn` (increment by 0.01) and `zoomOut` (decrement by 0.1)                                   |
+| `useToggleFacing(state, modes)`       | Toggles between two values (front and back side of the camera). Includes `type`, `toggleFacing`.                                          |
+| `useAutoFocus(state, modes)`          | Toggles between two values (focus on or off). Includes `autoFocus` and `toggleAutoFocus`.                                                 |
+| `useWhiteBalance(state)`              | Toggles between white balance values. Includes `whiteBalance`, `toggleWB` and `setWhiteBalance`.                                          |
+| `useFlash(state)`                     | Toggles between flash modes. Includes `flash`, `toggleFlash` and `setFlash`.                                                              |
+| `useAutoFocusTouch(state)`            | Touch to focus feature. Includes `autoFocusPoint`, `touchToFocus` (callback to be used in `onPress` for example) and `setAutoFocusPoint`. |
+| `useTextRecognition(state)`           | Text recognition feature. Includes `textBlocks`, `setTextblocks` and `textRecognized` (callback).                                         |
+| `useFaceDetection(state)`             | Face detection feature. Includes `faces`, `setFaces` and `facesDetected` (callback).                                                      |
+| `useBarcodeDetection(state)`          | Barcode detection feature. Includes `barcodes`, `setBarcodes` and `barcodeRecognized` (callback).                                         |
+| `takePicture({ cameraRef }, options)` | Function to take a picture. Returns a Promise with the result. `defaultPictureTakeOptions` can also be imported from the same file.       |
+| `recordVideo({ cameraRef }, options)` | Function to record a video. Returns a Promise with the result. `defaultVideoRecordOptions` can also be imported from the same file.       |
+| `stopRecording({ cameraRef })`        | Function to stop recording. Returns a Promise.                                                                                            |
+| `pausePreview({ cameraRef })`         | Function to pause the camera preview. Returns a Promise with the result as a boolean.                                                     |
+| `resumePreview({ cameraRef })`        | Function to resume the camera preview. Returns a Promise with the result as a boolean.                                                    |
 
 <p>&nbsp;</p>
 
@@ -136,4 +137,4 @@ Note that this requires a react-native version > 0.59 which supports React Hooks
 
 ## TODO
 
-* Improve TypeScript support
+- Improve TypeScript support

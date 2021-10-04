@@ -47,7 +47,7 @@ const baseConfig = {
 
 module.exports = [
   // ESM build
-  produce(baseConfig, draft => {
+  produce(baseConfig, (draft) => {
     draft.output.format = 'esm';
     draft.output.file = `dist/${packageJson.name}.js`;
   }),

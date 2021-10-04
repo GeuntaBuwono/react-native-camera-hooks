@@ -6,7 +6,7 @@ process.env.NODE_ENV = 'test';
 const babelConfigContents = fs.readFileSync(path.join(__dirname, '.babelrc'));
 const babelConfig = JSON.parse(babelConfigContents);
 
-module.exports = wallaby => ({
+module.exports = (wallaby) => ({
   files: [
     'src/**/*.js',
     { pattern: 'src/**/*.test.js', ignore: true },

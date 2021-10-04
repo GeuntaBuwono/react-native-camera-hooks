@@ -1,10 +1,11 @@
 import { useState, useCallback } from 'react';
+// eslint-disable-next-line import/namespace
 import { Dimensions } from 'react-native';
 
 export const useAutoFocusTouch = (state = {}) => {
   const [autoFocusPoint, setAutoFocusPoint] = useState(state);
 
-  const touchToFocus = useCallback(event => {
+  const touchToFocus = useCallback((event) => {
     const { pageX, pageY } = event.nativeEvent;
     const screenWidth = Dimensions.get('window').width;
     const screenHeight = Dimensions.get('window').height;

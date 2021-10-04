@@ -51,8 +51,10 @@ export const ExampleComponent = ({ initialProps }) => {
             try {
               setIsRecording(true);
               const data = await recordVideo();
+              // eslint-disable-next-line no-console
               console.warn(data);
             } catch (error) {
+              // eslint-disable-next-line no-console
               console.warn(error);
             } finally {
               setIsRecording(false);
